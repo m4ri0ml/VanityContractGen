@@ -1,8 +1,4 @@
-
-
 # Ethereum Vanity Address Finder
-
-
 
 This repo provides Python and JS script for finding the salt needed to generate vanity Ethereum addresses using the `CREATE2` opcode. It's designed to efficiently brute-force salt values that lead to Ethereum contract addresses with a specified prefix pattern.
 
@@ -57,5 +53,3 @@ The script will use *all* your available CPU cores and eventually output your de
 - The script divides the search space among multiple processes, each checking a unique set of salt values.
 - Each process generates potential Ethereum addresses using `CREATE2` and checks if they match the specified pattern.
 - Once a process finds a matching address, it signals others to stop, and the result is printed.
-
-```
